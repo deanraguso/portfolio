@@ -1,0 +1,86 @@
+/* Handles the regular and mobile navbar (including their styling) */
+
+/* Global Navigation */
+#mobile_header {
+    display: none;
+}
+nav {
+    float: right;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: wrap;
+}
+nav a {
+    text-decoration: none;
+}
+nav ul li {
+    padding: 5px;
+    float: left;
+}
+
+/* Page Headings and anchors */
+header h1 {
+    /* Offset the burger */
+    padding-left: 64px;
+}
+#about_page a {
+    display: inline-block;
+    text-align: center;
+    min-width:100%;
+    text-decoration:underline;
+}
+ 
+@media only screen and (max-width:650px) {
+    /* Mobile Navigation bar positioning */
+    #mobile_header {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #reg_nav {
+        display: none;
+    }
+    .mob_nav {
+        display: none;
+    }
+    #mobile_header h1 {
+            display: inline;
+        }
+
+    /* Configure the Toggle Nav-bar Burger */
+    #toggle {
+        display: none;
+    }
+    #mobile_header label {
+        float: right;
+        padding: 0.25rem 1rem;
+        border-radius: 0.5rem;
+    }
+    #toggle:checked ~ .mob_nav{
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #toggle:checked ~ .mob_nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+}
+
+/* Positioning adjustments for screens smaller than 300px */
+@media only screen and (max-width: 300px){
+    /* Handles edge cases */
+    html {
+        font-size: 0.7rem;
+    }
+    header h1 {
+        /* Offset the burger */
+        padding-left: 0;
+    }
+}

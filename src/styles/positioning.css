@@ -1,0 +1,206 @@
+/* Positioning: Concerning Height, Width, Padding, Margin and other poitioning */
+
+/* General container settings */
+main {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main h1 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+}
+section h2 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Project Related */
+#all_projects {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+article.project {
+    max-width: 700px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+article.project img {
+    max-width: 200px;
+}
+.project p {
+    display: inline-block;
+    width: 60%;
+    margin: 0;
+    padding: 1% 2%;
+}
+
+/* About and Contact Related */
+#all_information {
+    display: flex;
+    flex-direction: column;
+}
+article.information {
+    max-width:1100px;
+    height: 100%;
+    width: 100%;
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+article.information p {
+    display: inline-block;
+    max-width: 600px;
+    padding: 0 1rem;
+}
+#about_page article img {
+    width: 200px;
+}
+
+/* Blog Specific */
+#blog_page article {
+    max-width: 900px;
+}
+
+/* Contact Specifics */
+#contacts {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+#contacts article {
+    max-width: 700px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2%
+}
+article.information img {
+    width: 200px;
+}
+#contacts p {
+    min-width: 230px;
+    word-break: break-all;
+    display: inline-block;
+    margin: 0;
+    padding: 1% 2%;
+}
+#contacts p a {
+    word-break: keep-all;
+    display: inline-block;
+    width: 60%;
+    margin: 0;
+    padding: 1% 2%;
+}
+
+/* Home Page Specifics */
+#home_page main {
+    display: flex;
+    min-width: 95%;
+    padding-top: 10vh;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#home_page main img { 
+    max-height: 35vh;
+}
+#home_page main article {
+    /* Positioning */
+    text-align: center;
+    display: inline-block;
+    align-self: flex-end;
+    padding: 1% 5%;
+    margin: 0 30%;
+    margin-top: 5%;
+}
+#home_page main article h2 {
+    margin: 1%;
+}
+
+/* Mobile Only */
+@media only screen and (max-width: 650px){
+    /* (mobile) General */
+    main {
+       display: flex; 
+    }
+    main h1 {
+        display: none;
+    }
+
+    /* About and Contact Related */
+    article.information p {
+        text-align: center;
+    }
+
+    /* Project Page Specific */
+    .project p {
+        text-align: center;
+    }
+
+    /* (mobile) Home Page Specifics */
+    #home_page main {
+        padding-top: 5vh;
+    }
+    #home_page main img { 
+        max-height: 50vw;
+        margin: 1vh 3vh;
+    }
+    #home_page main article {
+        /* Positioning */
+        text-align: center;
+        display: inline-block;
+        align-self: flex-end;
+        padding: 1%;
+        padding-top: 0;
+        margin-left: 1%;
+        margin-right: 1%;
+    }    
+
+    /* Contact Specific */
+    #contacts{
+        align-content: center;
+    }
+    article.information img {
+        width: 100px;
+    }
+    #contacts p {
+        display: inline-block;
+        min-width: 50%;
+        text-align: left;
+    }
+    #contacts p a {
+        display: flex;
+        width: 100%;
+        text-align: left;
+        word-wrap: break-word;
+    }
+    #about_page article img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+/* Extreme edge cases, smaller than 240px cause horizontal on some pages */
+@media only screen and (max-width:250px){
+    /* Edge Case for Contact */
+    #contacts article {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #about_page article img {
+        width: 100px;
+        width: 50%;
+        height: auto;
+    }
+}

@@ -1,0 +1,75 @@
+/* Background: All things Background */
+
+/* Backgrounds */
+#home_page {
+    background-image: url("../assets/home_background.jpg");
+    background-size: 250vh auto;
+    background-position: center;
+}
+#blog_page {
+    background-image: url("../assets/contact_background.jpg");
+    background-size: 100vh auto;
+    background-position: center;
+}
+#about_page {
+    background-image: url("../assets/contact_background.jpg");
+    background-size: 100vh auto;
+    background-position: center;
+}
+#projects_page {
+    background-image: url("../assets/contact_background.jpg");
+    background-size: 100vh auto;
+    background-position: center;
+}
+#contact_page {
+    background-image: url("../assets/contact_background.jpg");
+    background-size: 100vh auto;
+    background-position: center;
+}
+
+
+/* Set color on article backgrounds */
+article.project {
+    background-color: var(--global-color-tertiary);
+}
+article.information {
+    background-color: var(--global-color-tertiary);
+}
+
+/* Blog Specific */
+#blog_page article {
+    background-color: var(--global-color-tertiary);
+}
+
+/* Home Page Specifics */
+#home_page main article {
+    background-color: var(--global-color-tertiary);
+    filter: brightness(var(--global-light));
+}
+#home_page main article h2 {
+    margin: 1%;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: var(--global-color-tertiary);
+    filter: brightness(var(--global-light));
+}
+
+
+/* Mobile Only */
+@media only screen and (max-width: 650px){
+    /* (mobile) Navigation Styling*/
+    nav {
+        background-color: none;
+    }
+    nav ul li{
+        background-color: var(--global-color-tertiary);
+        filter:brightness(var(--global-light));
+    }
+
+    /* (mobile) Home Page Specifics */
+    #mobile_header img {
+        background-color: var(--global-color-primary);
+    }
+}

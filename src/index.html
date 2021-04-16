@@ -1,0 +1,56 @@
+<!-- Home page for website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles/style.css" integrity="sha384-Sdvrkb78jb+ESPAdxQhi0XOh5vm7i3lNzwHLWVmPhUJMbXLY2nWlwTQOoKJ3y9z/">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dean Portfolio</title>
+</head>
+<body id="home_page">
+    <header id="mobile_header" >
+        <h1>Home</h1>
+        
+        <!-- Below is the mobile navigation implementation -->
+        <label for="toggle">
+            <img alt="Hamburger Menu Logo" src="assets/Hamburger_icon.svg" />
+        </label>
+        <input id="toggle" type="checkbox"/>
+        <nav class="mob_nav">
+            <ul>
+                <li id="home"><a href="./index.html">HOME</a></li>
+                <li id="about"><a href="./about.html">ABOUT</a></li>
+                <li id="projects"><a href="./projects.html">PROJECTS</a></li>
+                <li id="blog"><a href="./blog.html">BLOG</a></li>
+                <li id="contact"><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ordinary navigation implementation below -->
+    <nav id="reg_nav">
+        <ul>
+            <li id="home"><a href="./index.html">HOME</a></li>
+            <li id="about"><a href="./about.html">ABOUT</a></li>
+            <li id="projects"><a href="./projects.html">PROJECTS</a></li>
+            <li id="blog"><a href="./blog.html">BLOG</a></li>
+            <li id="contact"><a href="./contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Profile Image -->
+        <img alt="Profile Image" src="assets/profile.jpeg"/>
+        <br/>
+        <!-- Welcome Chunk -->
+        <article>
+            <h2>Hi!</h2>
+            I'm Dean Raguso, welcome to my site. Feel free to 
+            browse through my latest <a href="./projects.html">
+            projects</a>, if you wish to make
+            an enquiry, you can find all my information 
+            <a href="./contact.html">here!</a>
+        </article>
+    </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* Color: Anything to do with Font color or decoration */
+
+
+/* Default/Global Fonts/Backgrounds */
+body {
+    color: var(--global-color-primary);
+}
+main h1 {
+    text-decoration: underline;
+}
+
+#reg_nav a {
+    text-decoration: none;
+}
+
+/* Home Page Specifics */
+#home_page main article {
+    /* Font Styling */
+    color: var(--global-color-secondary);
+}
+
+/* Navigation Styling */
+a:link{
+    color: var(--global-color-primary);
+}
+a:visited{
+    color: var(--global-color-primary);
+}
+a:hover{
+    color: var(--global-color-secondary);
+}
+
+@media only screen and (max-width: 650px){
+    /* (mobile) General */
+    #mobile_header h1{
+        text-decoration: underline;
+    }
+}

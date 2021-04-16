@@ -1,0 +1,40 @@
+/* Font: Anything to do with font */
+
+body {
+    font-family: var(--global-font-family);
+    font-size: 1.5rem;
+}
+
+/* Project Paragraphs */
+.project p {
+    font-size: 0.9rem;
+}
+
+/* Article Paragraphs and links */
+article.information p {
+    font-size: 0.9rem;
+}
+#contacts p {
+    font-size: 1.2rem;
+}
+#contacts p a {
+    font-size: 2rem;
+}
+
+/* Home page main article font */
+#home_page main article {
+    font-size: 0.9rem;
+}
+
+/* Mobile Only */
+@media only screen and (max-width: 650px){
+    /* (mobile) General */
+    body {
+        font-size: 1rem;
+    }
+
+    /* Contact Specific */
+    #contacts p a {
+        font-size: 1em;
+    }
+}

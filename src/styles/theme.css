@@ -1,0 +1,20 @@
+/* Themes: Global variables for the theme */
+
+/* Global Variables */
+:root {
+    /* Document Font Family */
+    --global-font-family:'Courier New', Courier, monospace;
+
+    /* Document Color Theme */
+    --global-color-primary: rgb(255, 255, 255);
+    --global-color-secondary: rgb(30, 255, 0);
+    --global-color-tertiary: rgba(44, 53, 57, 0.6);
+    --global-color-article: white;
+    
+    /* Document Background Light Adjustment Constant */
+    --global-light: 1.76;
+
+    /* Document Background Variables */
+    --global-dashed: 3px;
+    --global-rounding: 50px;
+}

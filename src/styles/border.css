@@ -1,0 +1,53 @@
+/* Border: Anything to do with borders */
+
+/* Border for project articles */
+article.project {
+    border: var(--global-dashed) dashed var(--global-color-primary);
+}
+
+/* About and Contact Related */
+article.information {
+    border: var(--global-dashed) dashed var(--global-color-primary);
+}
+
+/* Blog Specific */
+#blog_page article {
+    border: var(--global-dashed) dashed var(--global-color-primary);
+}
+
+/* Home Page Specifics */
+#home_page main img { 
+    border-radius: 20vh;
+    border: var(--global-dashed) dashed var(--global-color-primary);
+}
+#home_page main article {
+    /* Background and Border */
+    border: var(--global-dashed) dashed var(--global-color-primary);
+}
+
+/* Navigation Styling */
+nav {
+    border: var(--global-dashed) dashed var(--global-color-secondary);
+}
+
+
+/* Mobile Only */
+@media only screen and (max-width: 650px){
+    /* (mobile) Navigation Styling*/
+    nav {
+        border: 0;
+        border: none;
+    }
+    nav ul li{
+        border: var(--global-dashed) dashed var(--global-color-secondary);
+    }
+    
+    /* (mobile) Home Page Specifics */
+    #mobile_header img {
+        border: var(--global-dashed) dashed var(--global-color-secondary);
+    }
+    #home_page main img { 
+        border-radius: 20vh;
+        border: var(--global-dashed) dashed var(--global-color-primary);
+    }
+}

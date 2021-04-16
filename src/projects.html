@@ -1,0 +1,83 @@
+<!-- Projects Document -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles/style.css" integrity="sha384-Sdvrkb78jb+ESPAdxQhi0XOh5vm7i3lNzwHLWVmPhUJMbXLY2nWlwTQOoKJ3y9z/">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dean Portfolio</title>
+</head>
+<body id="projects_page">
+    <header id="mobile_header">
+        <h1>Projects</h1>
+        
+        <!-- Mobile Navigation Implementation -->
+        <label for="toggle">
+            <img alt="Hamburger Menu Logo" src="assets/Hamburger_icon.svg" />
+        </label>
+        <input id="toggle" type="checkbox"/>
+        <nav class="mob_nav">
+            <ul>
+                <li id="home"><a href="./index.html">HOME</a></li>
+                <li id="about"><a href="./about.html">ABOUT</a></li>
+                <li id="projects"><a href="./projects.html">PROJECTS</a></li>
+                <li id="blog"><a href="./blog.html">BLOG</a></li>
+                <li id="contact"><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ordinary Navigation Implementation -->
+    <nav id="reg_nav">
+        <ul>
+            <li id="home"><a href="./index.html">HOME</a></li>
+            <li id="about"><a href="./about.html">ABOUT</a></li>
+            <li id="projects"><a href="./projects.html">PROJECTS</a></li>
+            <li id="blog"><a href="./blog.html">BLOG</a></li>
+            <li id="contact"><a href="./contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Projects</h1>
+        <!-- Main Project Container, each article class project is it's own project -->
+        <section id="all_projects">
+            <article class="project">
+                <!-- Article Image is wrapped in a github link to the project of concern -->
+                <a href="https://github.com/deanraguso/weatherChecker" target="_BLANK"> 
+                <img alt="Weather Checker Screenshot" src="assets/weatherCheckerProject.png"/>
+                </a>    
+                <p>
+                    <b>Weather Checker</b>
+                    <br/>
+                    A simple application that interacts with the OpenWeatherMap 
+                    API using Javascript to fetch the weather for a specified 
+                    city and state. Written in JavaScript and intended to be run
+                    in node locally, although could easily be adapted for use on
+                    a website.
+
+                    <br/><br/>
+                    Click image for Github link.
+                </p>
+            </article>
+            <article class="project">
+                <a href="https://github.com/deanraguso/findYourHat" target="_BLANK">
+                <img alt="Find Your Hat project screenshot" src="assets/findYourHatProject.png"/>
+                </a>
+                <p>
+                    <b>Find Your Hat</b>
+                    <br/>
+                    A basic puzzle game written in JavaScript, where you navigate
+                    a small asterisk to his hat "^". A simple game, yet it will in
+                    future act as a test-bed for problem solving algorithms and 
+                    machine learning.
+
+                    <br/><br/>
+                    Click image for Github link.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
